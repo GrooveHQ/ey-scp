@@ -5,9 +5,13 @@ instances on EngineYard
 
 ## Installation
 
-1. Run 
+1. Run
 
-        $ gem install ey-scp
+        $ gem install glennr-ey-scp
+
+Or with bundler
+
+        gem 'glennr-ey-scp'
 
 2. Make sure that you [have your public key registered with
    EY](https//support.cloud.engineyard.com/entries/21016528-Add-an-SSH-Key).
@@ -25,7 +29,7 @@ instances on EngineYard
         ey-scp -e ENVIRONMENT [OPTIONS] LOCAL_SOURCE_FILE REMOTE_DESTINATION
 
    e.g.
-   
+
         ey-scp -e production --app-servers ~/local/project/config/foo.yml /remote/project/path/config
 
 ### Specifying target instances
